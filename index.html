@@ -1,366 +1,322 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
-        <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png" class="logo" />
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="bx bx-x bx-sm" onclick="open_menu(true)"></i>
-                    </ul>
-                    <i class="bx bx-menu bx-sm" onclick="open_menu(false)"></i>
-                </nav>
-                <div class="header-text">
-                    <p class="accent">Analista programmatore</p>
-                    <h1>
-                        Ciao, mi chiamo <span class="accent">Marco Bollero</span
-                        ><br />
-                        e sono un sviluppatore italiano.
-                    </h1>
-                </div>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bx bx-x bx-sm" onclick="open_menu(true)"></i>
+        </ul>
+        <i class="bx bx-menu bx-sm" onclick="open_menu(false)"></i>
+      </nav>
+      <div class="header-text">
+        <p class="accent">Analista programmatore</p>
+        <h1>
+          Ciao, mi chiamo <span class="accent">Marco Bollero</span><br />
+          e sono un sviluppatore italiano.
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/foto.jpg" />
         </div>
-
-        <!-- about -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/foto.jpg" />
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="subtitle">About me</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam sem leo, eleifend ultricies odio id,
-                            malesuada tincidunt eros. Mauris eu elementum
-                            tellus, vitae bibendum tortor. Sed sed nulla metus.
-                            Proin dictum urna at lectus auctor sagittis. Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit.
-                            Cras ac massa non purus auctor efficitur id id
-                            augue. Etiam feugiat nibh eget sapien mattis, ut
-                            luctus ipsum fermentum.
-                        </p>
-                        <div class="tab-titles">
-                            <p
-                                class="tab-links active-link"
-                                onclick="open_tab('skills')"
-                            >
-                                Skills
-                            </p>
-                            <p
-                                class="tab-links"
-                                onclick="open_tab('experience')"
-                            >
-                                Experience
-                            </p>
-                            <p
-                                class="tab-links"
-                                onclick="open_tab('education')"
-                            >
-                                Education
-                            </p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li>
-                                    <span>C/C++</span><br />Designing Web app
-                                    interfaces
-                                </li>
-                                <li>
-                                    <span>Rust</span><br />Designing Web app
-                                    interfaces
-                                </li>
-                                <li>
-                                    <span>Python</span><br />Designing Web app
-                                    interfaces
-                                </li>
-                                <li>
-                                    <span>Web Development</span><br />Web app
-                                    development
-                                </li>
-                                <li>
-                                    <span>App Development</span><br />Building
-                                    Android/iOS apps
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li>
-                                    <span>2020-2025</span><br />Building
-                                    Android/iOS apps
-                                </li>
-                                <li>
-                                    <span>2010-2020</span><br />Building
-                                    Android/iOS apps
-                                </li>
-                                <li>
-                                    <span>2003-2010</span><br />Building
-                                    Android/iOS apps
-                                </li>
-                                <li>
-                                    <span>1996-2003</span><br />Web app
-                                    development
-                                </li>
-                                <li>
-                                    <span>1991-1996</span><br />Designing Web
-                                    app interfaces
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li>
-                                    <span>2015</span><br />Designing Web app
-                                    interfaces
-                                </li>
-                                <li>
-                                    <span>2002</span><br />Web app development
-                                </li>
-                                <li>
-                                    <span>1991</span><br />Building Android/iOS
-                                    apps
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About me</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nullam sem leo, eleifend ultricies odio id,
+            malesuada tincidunt eros. Mauris eu elementum
+            tellus, vitae bibendum tortor. Sed sed nulla metus.
+            Proin dictum urna at lectus auctor sagittis. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras ac massa non purus auctor efficitur id id
+            augue. Etiam feugiat nibh eget sapien mattis, ut
+            luctus ipsum fermentum.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="open_tab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="open_tab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="open_tab('education')">
+              Education
+            </p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>C/C++</span><br />Designing Web app
+                interfaces
+              </li>
+              <li>
+                <span>Rust</span><br />Designing Web app
+                interfaces
+              </li>
+              <li>
+                <span>Python</span><br />Designing Web app
+                interfaces
+              </li>
+              <li>
+                <span>Web Development</span><br />Web app
+                development
+              </li>
+              <li>
+                <span>App Development</span><br />Building
+                Android/iOS apps
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>2020-2025</span><br />Building
+                Android/iOS apps
+              </li>
+              <li>
+                <span>2010-2020</span><br />Building
+                Android/iOS apps
+              </li>
+              <li>
+                <span>2003-2010</span><br />Building
+                Android/iOS apps
+              </li>
+              <li>
+                <span>1996-2003</span><br />Web app
+                development
+              </li>
+              <li>
+                <span>1991-1996</span><br />Designing Web
+                app interfaces
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2015</span><br />Designing Web app
+                interfaces
+              </li>
+              <li>
+                <span>2002</span><br />Web app development
+              </li>
+              <li>
+                <span>1991</span><br />Building Android/iOS
+                apps
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- content -->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div
-                        onmouseover="animate_icons(true)"
-                        onmouseout="animate_icons(false)"
-                    >
-                        <i class="bx bx-code-curly bx-lg"></i>
-                        <h2>Sviluppo applicazioni</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet. Cum possimus unde nam
-                            sunt suscipit qui voluptatem inventore At sunt
-                            blanditiis et explicabo consequatur vel omnis
-                            aspernatur vel inventore obcaecati. Aut quia labore
-                            est sunt rerum sit vitae adipisci. A incidunt quia
-                            ut quasi illo cum maxime commodi.
-                        </p>
-                    </div>
-                    <div
-                        onmouseover="animate_icons(true)"
-                        onmouseout="animate_icons(false)"
-                    >
-                        <i class="bx bx-support bx-lg"></i>
-                        <h2>Supporto</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet. Cum possimus unde nam
-                            sunt suscipit qui voluptatem inventore At sunt ut
-                            quasi illo cum maxime commodi.
-                        </p>
-                    </div>
-                    <div
-                        onmouseover="animate_icons(true)"
-                        onmouseout="animate_icons(false)"
-                    >
-                        <i class="bx bxs-window-alt bx-lg"></i>
-                        <h2>Web design</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet. Cum possimus unde nam
-                            sunt suscipit qui voluptatem inventore At sunt
-                            blanditiis et explicabo consequatur vel omnis
-                            aspernatur vel inventore obcaecati. Aut quia labore
-                            est sunt rerum sit vitae adipisci. A incidunt quia
-                            ut quasi illo cum maxime commodi.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div onmouseover="animate_icons(true)" onmouseout="animate_icons(false)">
+          <i class="bx bx-code-curly bx-lg"></i>
+          <h2>Sviluppo applicazioni</h2>
+          <p>
+            Lorem ipsum dolor sit amet. Cum possimus unde nam
+            sunt suscipit qui voluptatem inventore At sunt
+            blanditiis et explicabo consequatur vel omnis
+            aspernatur vel inventore obcaecati. Aut quia labore
+            est sunt rerum sit vitae adipisci. A incidunt quia
+            ut quasi illo cum maxime commodi.
+          </p>
         </div>
-
-        <!-- portfolio -->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/work-1.jpg" alt="?" />
-                        <div class="layer">
-                            <h3>Applicazione 1</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet. Cum possimus unde
-                                nam sunt suscipit qui voluptatem inventore At
-                                sunt blanditiis et explicabo consequatur vel
-                                omnis aspernatur vel inventore obcaecati.
-                            </p>
-                            <a href="#"
-                                ><i class="bx bx-link-external bx-sm"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-2.jpg" alt="?" />
-                        <div class="layer">
-                            <h3>Applicazione 2</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet. Cum possimus unde
-                                nam sunt suscipit qui voluptatem inventore At
-                                sunt blanditiis et explicabo consequatur vel
-                                omnis aspernatur vel inventore obcaecati.
-                            </p>
-                            <a href="#"
-                                ><i class="bx bx-link-external bx-sm"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-3.jpg" alt="?" />
-                        <div class="layer">
-                            <h3>Applicazione 3</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet. Cum possimus unde
-                                nam sunt suscipit qui voluptatem inventore At
-                                sunt blanditiis et explicabo consequatur vel
-                                omnis aspernatur vel inventore obcaecati.
-                            </p>
-                            <a href="#"
-                                ><i class="bx bx-link-external bx-sm"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="button">See more</a>
-            </div>
+        <div onmouseover="animate_icons(true)" onmouseout="animate_icons(false)">
+          <i class="bx bx-support bx-lg"></i>
+          <h2>Supporto</h2>
+          <p>
+            Lorem ipsum dolor sit amet. Cum possimus unde nam
+            sunt suscipit qui voluptatem inventore At sunt ut
+            quasi illo cum maxime commodi.
+          </p>
         </div>
-
-        <!-- contact -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contattami</h1>
-                        <p>
-                            <i class="bx bx-envelope bx-sm"></i
-                            >contattami@example.com
-                        </p>
-                        <p><i class="bx bx-phone bx-sm"></i>+39 335 1234567</p>
-                        <div class="social">
-                            <a href="#"
-                                ><i class="bx bxl-linkedin bx-md"></i
-                            ></a>
-                            <a href="#"><i class="bx bxl-twitter bx-md"></i></a>
-                            <a href="#"
-                                ><i class="bx bxl-mastodon bx-md"></i
-                            ></a>
-                        </div>
-                        <a href="#" class="button" download>Download CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input
-                                type="text"
-                                name="Name"
-                                placeholder="Il tuo nome"
-                                required
-                            />
-                            <input
-                                type="text"
-                                name="Email"
-                                placeholder="Il tuo indirizzo email"
-                                required
-                            />
-                            <textarea
-                                name="Message"
-                                rows="6"
-                                placeholder="Il tuo messaggio"
-                            ></textarea>
-                            <button type="submit" class="button-invert">
-                                Invia
-                            </button>
-                            <span id="confirm"></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div onmouseover="animate_icons(true)" onmouseout="animate_icons(false)">
+          <i class="bx bxs-window-alt bx-lg"></i>
+          <h2>Web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet. Cum possimus unde nam
+            sunt suscipit qui voluptatem inventore At sunt
+            blanditiis et explicabo consequatur vel omnis
+            aspernatur vel inventore obcaecati. Aut quia labore
+            est sunt rerum sit vitae adipisci. A incidunt quia
+            ut quasi illo cum maxime commodi.
+          </p>
         </div>
-        <div id="copyright">
-            Copyright &copy; Marco Bollero. Made with
-            <i class="bx bxs-heart"></i> by Marco Bollero
+      </div>
+    </div>
+  </div>
+
+  <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.jpg" alt="?" />
+          <div class="layer">
+            <h3>Applicazione 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Cum possimus unde
+              nam sunt suscipit qui voluptatem inventore At
+              sunt blanditiis et explicabo consequatur vel
+              omnis aspernatur vel inventore obcaecati.
+            </p>
+            <a href="#"><i class="bx bx-link-external bx-sm"></i></a>
+          </div>
         </div>
-        <script>
-            var tabs = document.getElementsByClassName("tab-links");
-            var contents = document.getElementsByClassName("tab-contents");
-            var services = document.getElementById("services");
-            var icons = services.getElementsByClassName("bx");
-            var menu = document.getElementById("sidemenu");
+        <div class="work">
+          <img src="images/work-2.jpg" alt="?" />
+          <div class="layer">
+            <h3>Applicazione 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Cum possimus unde
+              nam sunt suscipit qui voluptatem inventore At
+              sunt blanditiis et explicabo consequatur vel
+              omnis aspernatur vel inventore obcaecati.
+            </p>
+            <a href="#"><i class="bx bx-link-external bx-sm"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.jpg" alt="?" />
+          <div class="layer">
+            <h3>Applicazione 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Cum possimus unde
+              nam sunt suscipit qui voluptatem inventore At
+              sunt blanditiis et explicabo consequatur vel
+              omnis aspernatur vel inventore obcaecati.
+            </p>
+            <a href="#"><i class="bx bx-link-external bx-sm"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">See more</a>
+    </div>
+  </div>
 
-            function open_tab(name) {
-                for (tab of tabs) {
-                    tab.classList.remove("active-link");
-                }
-                for (content of contents) {
-                    content.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(name).classList.add("active-tab");
-            }
+  <!-- contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contattami</h1>
+          <p>
+            <i class="bx bx-envelope bx-sm"></i>contattami@example.com
+          </p>
+          <p><i class="bx bx-phone bx-sm"></i>+39 335 1234567</p>
+          <div class="social">
+            <a href="#"><i class="bx bxl-linkedin bx-md"></i></a>
+            <a href="#"><i class="bx bxl-twitter bx-md"></i></a>
+            <a href="#"><i class="bx bxl-mastodon bx-md"></i></a>
+          </div>
+          <a href="#" class="button" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Il tuo nome" required />
+            <input type="text" name="Email" placeholder="Il tuo indirizzo email" required />
+            <textarea name="Message" rows="6" placeholder="Il tuo messaggio"></textarea>
+            <button type="submit" class="button-invert">
+              Invia
+            </button>
+            <span id="confirm"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="copyright">
+    Copyright &copy; Marco Bollero. Made with
+    <i class="bx bxs-heart"></i> by Marco Bollero
+  </div>
+  <script>
+    var tabs = document.getElementsByClassName("tab-links");
+    var contents = document.getElementsByClassName("tab-contents");
+    var services = document.getElementById("services");
+    var icons = services.getElementsByClassName("bx");
+    var menu = document.getElementById("sidemenu");
 
-            function animate_icons(is_hover) {
-                for (icon of icons) {
-                    icon.classList.remove("bx-tada");
-                }
-                if (is_hover) {
-                    for (icon of event.currentTarget.getElementsByClassName(
-                        "bx",
-                    )) {
-                        icon.classList.add("bx-tada");
-                    }
-                }
-            }
+    function open_tab(name) {
+      for (tab of tabs) {
+        tab.classList.remove("active-link");
+      }
+      for (content of contents) {
+        content.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(name).classList.add("active-tab");
+    }
 
-            function open_menu(close_me) {
-                if (close_me) {
-                    menu.style.right = "-250px";
-                } else {
-                    menu.style.right = "0";
-                }
-            }
-        </script>
-        <script>
-            const scriptURL =
-                "https://script.google.com/macros/s/AKfycbx2BtUaSUgE1w-Q_W2ZtdSI7af8ME4M2eE-rxB5EYFAJ_UEfuDLqSVs7lEVpokv3HjW/exec";
-            const form = document.forms["submit-to-google-sheet"];
-            const confirm = document.getElementById("confirm");
+    function animate_icons(is_hover) {
+      for (icon of icons) {
+        icon.classList.remove("bx-tada");
+      }
+      if (is_hover) {
+        for (icon of event.currentTarget.getElementsByClassName(
+          "bx",
+        )) {
+          icon.classList.add("bx-tada");
+        }
+      }
+    }
 
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                    .then((response) => {
-                        confirm.innerHTML = "Messaggio inviato!";
-                        setTimeout(function () {
-                            confirm.innerHTML = "";
-                        }, 5000);
-                        form.reset();
-                    })
-                    .catch((error) => console.error("Error!", error.message));
-            });
-        </script>
-    </body>
+    function open_menu(close_me) {
+      if (close_me) {
+        menu.style.right = "-250px";
+      } else {
+        menu.style.right = "0";
+      }
+    }
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbx2BtUaSUgE1w-Q_W2ZtdSI7af8ME4M2eE-rxB5EYFAJ_UEfuDLqSVs7lEVpokv3HjW/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const confirm = document.getElementById("confirm");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, {method: "POST", body: new FormData(form)})
+        .then((response) => {
+          confirm.innerHTML = "Messaggio inviato!";
+          setTimeout(function () {
+            confirm.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+
 </html>
